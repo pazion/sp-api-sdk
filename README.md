@@ -1,3 +1,6 @@
+# Fork reason
+To get a restricted access token the actual argument is an object rather than an array of objects. 
+
 # Amazon Selling Partner API - PHP SDK
 
 This repository is not an official Amazon PHP library for their SP API. 
