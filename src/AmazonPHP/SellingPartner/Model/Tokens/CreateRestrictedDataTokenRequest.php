@@ -32,7 +32,7 @@ class CreateRestrictedDataTokenRequest implements \ArrayAccess, \JsonSerializabl
      */
     protected static array $openAPITypes = [
         'target_application' => 'string',
-        'restricted_resources' => '\AmazonPHP\SellingPartner\Model\Tokens\RestrictedResource[]',
+        'restricted_resources' => '\AmazonPHP\SellingPartner\Model\Tokens\RestrictedResource',
     ];
 
     /**
@@ -210,9 +210,9 @@ class CreateRestrictedDataTokenRequest implements \ArrayAccess, \JsonSerializabl
     /**
      * Gets restricted_resources.
      *
-     * @return \AmazonPHP\SellingPartner\Model\Tokens\RestrictedResource[]
+     * @return \AmazonPHP\SellingPartner\Model\Tokens\RestrictedResource
      */
-    public function getRestrictedResources() : array
+    public function getRestrictedResources() : \AmazonPHP\SellingPartner\Model\Tokens\RestrictedResource
     {
         return $this->container['restricted_resources'];
     }
@@ -220,11 +220,11 @@ class CreateRestrictedDataTokenRequest implements \ArrayAccess, \JsonSerializabl
     /**
      * Sets restricted_resources.
      *
-     * @param \AmazonPHP\SellingPartner\Model\Tokens\RestrictedResource[] $restricted_resources A list of restricted resources. Maximum: 50
+     * @param \AmazonPHP\SellingPartner\Model\Tokens\RestrictedResource $restricted_resources A list of restricted resources. Maximum: 50
      *
      * @return self
      */
-    public function setRestrictedResources(array $restricted_resources) : self
+    public function setRestrictedResources(RestrictedResource $restricted_resources) : self
     {
         $this->container['restricted_resources'] = $restricted_resources;
 
